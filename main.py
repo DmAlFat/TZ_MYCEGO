@@ -44,7 +44,7 @@ with ZipFile(io.BytesIO(requests.get(download_url).content)) as archive:
 
 
 if len(directory_list) == 0:
-    sys.exit("Запрошенные папки не найдены, либо файлы в них отсутствуют!")
+    sys.exit("Запрошенные папки не найдены!")
 
 
 # Открытие всех изображений из пользовательских папок
